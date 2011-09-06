@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="/browserify.js"></script>
+    <script type="text/javascript">
+      // Require the files
+      var files = require('files')
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var wrapper = document.querySelector('#files');
+        
+        // Iterate through each file, appending their source to the page.
+        Object.keys(files).forEach(function(name) {
+          var div = document.createElement('div');
+          wrapper.appendChild(div);
+          
+          var label = document.createElement('div');
+          label.textContent = name;
+          div.appendChild(label);
+
+          var textarea = document.createElement('textarea');
+          textarea.value = files[name];
+          div.appendChild(textarea);
+        });
+      }, false);
+    </script>
+  </head>
+  <body>
+    <div id="files"></div>
+  </body>
+</html>

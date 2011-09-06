@@ -1,0 +1,24 @@
+Git for windows: msysgit & gitextensions
+http://code.google.com/p/gitextensions/downloads/detail?name=GitExtensions224SetupComplete.msi
+
+Integration:
+- bash command line
+- Git Extensions GUI
+- Visual Studio Toolbar
+
+Configure BASH env:
+- Configure bash startup directory to C:\Projects\
+
+Global gitignore file:
+- Create ".gitignore" in your home directory
+- Use the new .gitignore file: "git config --global core.excludesfile ~/.gitignore"
+
+Add common ignores to the new file:
+_sgbak/
+.DS_Store
+bin/
+dev.config
+
+Configure your connection to Github:
+http://help.github.com/win-set-up-git/
+http://help.github.com/ssh-key-passphrases/

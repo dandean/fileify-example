@@ -1,0 +1,18 @@
+{
+  "author": "Dan Dean <@dandean> (http://dandean.com)",
+  "name": "fileify-example",
+  "description": "An example use of fileify",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.4.10"
+  },
+  "dependencies": {
+    "express": "*",
+    "browserify": "*",
+    "fileify": "*"
+  },
+  "devDependencies": {}
+}
