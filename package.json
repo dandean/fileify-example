@@ -10,7 +10,7 @@
     "node": "~0.4.10"
   },
   "dependencies": {
-    "express": "*",
+    "express": ">=4.14.1",
     "browserify": "*",
     "fileify": "*"
   },
